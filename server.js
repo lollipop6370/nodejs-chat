@@ -37,11 +37,9 @@ io.on('connection', (socket) => {
     });
 });
 
-var server_port = process.env.OPENSHIFT_NODEJS_PORT || 8080;
-var server_ip_address = process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1';
 
 // 注意，這邊的 server 原本是 app
-server.listen(server_port, server_ip_address, function(){
+server.listen(8080, (){
     console.log("Server Started. http://localhost:8080");
 });
  
