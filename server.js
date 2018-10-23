@@ -8,7 +8,7 @@ const io = require('socket.io')(server);
 let onlineCount = 0;
 
 app.get('/', (req, res) => {
-    res.sendFile( __dirname + '/views/server.html');
+    res.sendFile( __dirname + '/views/index.html');
 });
  
 // 當發生連線事件
@@ -38,7 +38,7 @@ io.on('connection', (socket) => {
 });
  
 // 注意，這邊的 server 原本是 app
-server.listen(3000, () => {
-    console.log("Server Started. http://localhost:3000");
+server.listen(8080, () => {
+    console.log("Server Started. http://localhost:8080");
 });
  
