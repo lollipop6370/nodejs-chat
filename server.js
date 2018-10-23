@@ -8,7 +8,7 @@ const io = require('socket.io')(server);
 let onlineCount = 0;
 
 app.get('/', (req, res) => {
-    res.sendFile( __dirname + '/views/index.html');
+    res.sendFile( __dirname + '/views/server.html');
 });
  
 // 當發生連線事件
