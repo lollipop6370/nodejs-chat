@@ -38,7 +38,7 @@ io.on('connection', (socket) => {
 });
  
 // 注意，這邊的 server 原本是 app
-server.listen(8080, () => {
+server.listen(8080, 172.30.97.228, () => {
     console.log("Server Started. http://localhost:8080");
 });
  
