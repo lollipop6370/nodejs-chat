@@ -1,4 +1,6 @@
 
+const PORT = process.env.PORT || 5000;
+
 const express = require('express');
 const app = express();
 
@@ -39,7 +41,7 @@ io.on('connection', (socket) => {
 
 
 // 注意，這邊的 server 原本是 app
-server.listen(5000, () => {
+server.listen(PORT, () => {
     console.log("Server Started. http://localhost:8080");
 });
  
